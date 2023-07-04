@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 2%;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 15px;
+}
+
+.result-content{
+    width: 50%;
+    background: linear-gradient( rgb(46, 43, 233),rgb(120, 87, 255));
+  display: flex;   
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  height: 425px;
+  color: hsl(0, 0%, 100%);
+ border-radius: 15px;
+}
+
+.result-content .circle {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(  rgb(78, 33, 202),rgba(36, 33, 202, 0) );
+    border-radius: 50%;
+}
+.result-content >p {
+    text-align: center;
+    width: 80%;
+    color: rgb(147, 147, 190);
+}
+.circle .marks {
+    margin-top: 20%;
+    font-size: 3em;
+}
+.circle > p {
+    color: rgb(151, 151, 191);
+}
+.text-content{
+    width: 50%;
+    display: flex;   
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 425px;
+}
+
+
+.text-content h3 {
+    text-align: left;
+    margin-right: 45%;
+}
+
+.text-content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+
+.row svg  {
+   vertical-align: middle;
+}
+
+.text-red {
+    color: rgb(255, 87, 87);
+}
+
+.text-yellow{
+    color: hsl(39, 100%, 56%);
+}
+
+.text-green{
+    color: hsl(166, 100%, 37%);
+}
+
+.text-blue{
+    color: hsl(234, 85%, 45%);
+}
+
+.text-grey{
+    color: grey;
+}
+
+.bg-row-red{
+    background-color: rgb(245, 224, 224);
+}
+
+.bg-row-yellow{
+    background-color: hsl(38, 71%, 89%);
+}
+
+.bg-row-green{
+    background-color: hsl(166, 52%, 87%) ;
+}
+
+.bg-row-blue{
+    background-color: hsl(235, 62%, 86%);
+}
+
+button{
+    width:90% ;
+    padding: 15px 15px;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 1.3em;
+    cursor: pointer;
+
+}
+button:hover{
+    background: linear-gradient( rgb(46, 43, 233),rgb(120, 87, 255));
+}
+@media (max-width: 550px) {
+
+    .container{
+        flex-direction: column;
+    }
+   
+    .text-content{
+        width: 100%;
+    }
+    .result-content{
+        width: 100%;
+    }
+  }
