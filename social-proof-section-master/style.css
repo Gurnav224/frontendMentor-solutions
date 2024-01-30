@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: url("./images/bg-pattern-top-desktop.svg") left top no-repeat,
+    url("./images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+.stats__rating__container,
+.cards__container {
+  /* border: 2px solid; */
+  width: 80%;
+}
+
+.stats__rating__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 40vh;
+}
+
+.users_stats {
+  width: 50%;
+  padding: 10px 20px;
+  text-align: left;
+  max-width: 550px;
+}
+
+.users_stats h1 {
+  font-size: 3.5rem;
+  padding: 10px 20px;
+  color: #502050;
+}
+
+.users_stats p {
+  line-height: 1.3;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #937b92;
+}
+
+.rating__cards__container {
+  /* height: 20vh; */
+  width: 35%;
+}
+
+.rating__card {
+  height: 6vh;
+  max-width: 360px;
+  margin: 15px 0px;
+  padding: 10px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.rating__card span {
+  color: #502050;
+}
+
+.rating-card-two {
+  margin-left: 35px;
+}
+
+.rating-card-three {
+  margin-left: 80px;
+}
+
+.cards__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile_card {
+  width: 28%;
+  background-color: #502050;
+  border-radius: 10px;
+  color: #f7f2f7;
+  padding: 25px 19px;
+  letter-spacing: 1px;
+}
+
+.user_details {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.user_details img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user_details h4 {
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.user_details p {
+  color: #ee68a4;
+}
+
+.profile_card > p {
+  padding: 20px 10px;
+  line-height: 1.3;
+  font-size: 1.2rem;
+}
+
+.profile_btm_two {
+  margin-top: 4%;
+}
+
+.profile_btm_three {
+  margin-top: 8%;
+}
+
+/* mobile css */
+
+@media screen and (max-width: 1100px) {
+  .stats__rating__container {
+    flex-direction: column;
+    width: 95%;
+    height: 80vh;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+  }
+  .rating__cards__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .rating__card {
+    margin: 10px auto;
+    flex-direction: column;
+    height: 10vh;
+    gap: 10px;
+  }
+
+  .users_stats {
+    width: 95%;
+   
+    text-align: left;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .cards__container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .profile_card {
+    width: 99%;
+  }
+  .users_stats h1 {
+    font-size: 2.5rem;
+    padding: 15px 0;
+   
+  }
+  .users_stats p {
+    padding: 15px 0;
+    
+  }
+}
