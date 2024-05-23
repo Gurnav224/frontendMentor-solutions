@@ -1,0 +1,138 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --mangeta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/bg-desktop.svg");
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 90vw;
+  font-family: sans-serif;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 60px 20px;
+}
+header ion-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: white;
+}
+header h1 {
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  width: 90vw;
+  height: 70vh;
+}
+
+main img,
+main div {
+  padding: 10px 20px;
+  height: 100%;
+  width: 50%;
+}
+
+main div {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+div h2 {
+  line-height: 1.7;
+  font-size: 3rem;
+}
+
+div p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+div button {
+  padding: 15px 20px;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: var(--violet);
+  border-radius: 25px;
+  border: none;
+  width: 230px;
+}
+
+div button:hover {
+  background-color: var(--mangeta);
+  color: white;
+}
+.social_icons {
+  position: absolute;
+  right: 10px;
+}
+
+.social_icons i {
+  border: 1px solid white;
+  font-size: 25px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 100%;
+}
+
+.social_icons i:hover {
+  color: var(--mangeta);
+  border-color: var(--mangeta);
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    flex-direction: column;
+  }
+
+ 
+
+  main img {
+    width: 100%;
+  }
+  main div {
+    width: 100%;
+    align-items: center;
+  }
+
+  main div h2 {
+    line-height: 1.5;
+    font-size: 2rem;
+
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  main div p {
+    text-align: center;
+
+    padding: 10px 20px;
+  }
+ .social_icons {
+    left: 30%;
+    bottom: -20%;
+ }
+}
